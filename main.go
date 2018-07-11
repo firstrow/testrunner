@@ -56,7 +56,7 @@ func runTests() {
 	fmt.Println("RUNNING TESTS")
 	fmt.Println("--------------")
 
-	cmd := exec.Command("go", "test", "-v")
+	cmd := exec.Command("go", "test", "-v", "-cover")
 
 	var out bytes.Buffer
 	var outErr bytes.Buffer
